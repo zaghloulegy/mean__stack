@@ -1,11 +1,11 @@
 <mat-form-field appearance="fill">
   <mat-label>ID</mat-label>
-  <input matInput>
+  <input matInput [(ngModel)]="id" name="id" />
 </mat-form-field>
 
 <mat-form-field appearance="fill">
   <mat-label>Password</mat-label>
-  <input matInput>
+  <input matInput [(ngModel)]="pwd" name="pwd" />
 </mat-form-field>
 
-    <button mat-raised-button color="primary">login</button>
+<button mat-raised-button color="primary" (click)="loginFunc1()">login</button>
